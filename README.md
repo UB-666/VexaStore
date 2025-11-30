@@ -96,6 +96,13 @@
    - Select Event: `checkout.session.completed`
    - Copy `Signing Secret` to `STRIPE_WEBHOOK_SECRET` in `.env.local`
 
+   **For Local Development:**
+   ```bash
+   # Forward webhooks to localhost
+   stripe listen --forward-to localhost:3000/api/stripe-webhook
+   # Use the secret it gives you (whsec_...) in your .env.local
+   ```
+
 6. **Run Locally**
    ```bash
    pnpm dev
