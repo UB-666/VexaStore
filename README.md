@@ -74,10 +74,29 @@
    cp .env.example .env.local
    ```
 
-3. **Setup Database**
-   Run the provided `database.sql` script in your Supabase SQL Editor to set up tables and security policies.
+3. **Setup Database (Supabase)**
+   - Go to your Supabase Project → **SQL Editor**
+   - Copy the contents of `database.sql` from this repo
+   - Paste into SQL Editor and click **Run**
+   - *This creates all tables, security policies, and sample data.*
 
-4. **Run Locally**
+4. **Create Admin Account**
+   - Sign up for an account in the app first
+   - Go to Supabase SQL Editor and run this command (replace email):
+     ```sql
+     UPDATE user_roles 
+     SET role = 'developer' 
+     WHERE user_id = (SELECT id FROM auth.users WHERE email = 'your@email.com');
+     ```
+   - *Verify with:* `SELECT * FROM user_roles;`
+
+5. **Setup Stripe (Demo Mode)**
+   - Go to **Stripe Dashboard** → **Developers** → **Webhooks**
+   - Add Endpoint: `https://your-domain.vercel.app/api/stripe-webhook`
+   - Select Event: `checkout.session.completed`
+   - Copy `Signing Secret` to `STRIPE_WEBHOOK_SECRET` in `.env.local`
+
+6. **Run Locally**
    ```bash
    pnpm dev
    ```
