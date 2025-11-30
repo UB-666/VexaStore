@@ -1,0 +1,35 @@
+# Files to exclude from Vercel deployment
+
+# Documentation (not needed in deployment)
+*.md
+!README.md
+
+# Development files
+.env.local.example
+stripe.exe
+start-webhook-listener.bat
+
+# Scripts
+scripts/
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test files
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+
+# Development tools
+.factory/

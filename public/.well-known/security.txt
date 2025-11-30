@@ -1,0 +1,48 @@
+Contact: mailto:security@example.com
+Expires: 2026-12-31T23:59:59.000Z
+Preferred-Languages: en
+Canonical: https://example.com/.well-known/security.txt
+
+# Security Policy
+
+If you discover a security vulnerability in VexaStore, please report it responsibly.
+
+## Reporting a Vulnerability
+
+Please DO NOT open a public GitHub issue. Instead:
+
+1. Email: security@example.com (replace with your actual security email)
+2. Include:
+   - Description of the vulnerability
+   - Steps to reproduce
+   - Potential impact
+   - Any suggested fixes (optional)
+
+## Response Time
+
+- We aim to acknowledge reports within 48 hours
+- We'll provide a detailed response within 7 days
+- We'll keep you informed of the progress
+
+## Disclosure Policy
+
+- Please allow us reasonable time to fix the issue before public disclosure
+- We'll credit you in our security acknowledgments (if desired)
+- We follow coordinated vulnerability disclosure practices
+
+## Scope
+
+In scope:
+- Authentication and authorization bypass
+- SQL injection, XSS, CSRF
+- Sensitive data exposure
+- Payment processing vulnerabilities
+- Session management issues
+
+Out of scope:
+- Social engineering attacks
+- Physical attacks
+- Denial of Service (DoS/DDoS)
+- Brute force attacks (already rate-limited)
+
+Thank you for helping keep VexaStore secure!
