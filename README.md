@@ -133,7 +133,7 @@ This project implements enterprise-grade security practices:
 - **Environment Variable Validation**
 - **Strict Database Policies** (RLS)
 
-**Security Score:** 9.8/10 (Production Ready)
+**Security Score:** (Production Ready)
 
 ---
 
